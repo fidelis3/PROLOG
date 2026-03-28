@@ -19,6 +19,9 @@ PROLOG/
 	ReadMe.md
 	LESSON1/
 		facts_queries.pl
+	LESSON2/
+		unification.png
+		unification1.png
 ```
 
 ## Prerequisites
@@ -65,6 +68,31 @@ In `facts_queries.pl` you already have:
 - **Rules** like `playsAirGuitar(X) :- listens2music(X), happy(X).`
 - **Logical AND** using commas in rule bodies
 - **Variables** such as `X`
+
+## Lesson 2: Unification
+
+Lesson 2 focuses on **unification**.
+
+Unification is how Prolog matches terms to decide whether goals can be satisfied.
+It is used when:
+
+- matching a query with a fact or rule head
+- binding variables to values
+- checking whether two terms can become equal
+
+Examples:
+
+```prolog
+= (mia, mia).
+= (X, mia).
+= (likes(mia, X), likes(mia, guitar)).
+= (likes(X, guitar), likes(mia, Y)).
+```
+
+In `LESSON2/`, refer to:
+
+- `unification.png`
+- `unification1.png`
 
 
 

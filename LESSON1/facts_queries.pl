@@ -20,3 +20,10 @@ playsAirGuitar(X):- listens2music(X), happy(X).
 
 
 %Predicates in these file are:woman, happy, listens2music, party, playsAirGuitar.
+
+loves(vincent,mia).
+loves(marsellus,mia).
+loves(pumpkin, honey_bunny).
+loves(honey_bunny, pumpkin).
+
+jealous(X,Y):- loves(X,Z), loves(Y,Z).
