@@ -22,6 +22,12 @@ PROLOG/
 	LESSON2/
 		unification.png
 		unification1.png
+	LESSON3/
+		proof_search.pl
+	LESSON4/
+		recursion.pl
+	LESSON5/
+		lists.png
 ```
 
 ## Prerequisites
@@ -93,6 +99,62 @@ In `LESSON2/`, refer to:
 
 - `unification.png`
 - `unification1.png`
+
+## Lesson 3: Proof Search
+
+Lesson 3 focuses on how Prolog performs **proof search** over facts and rules.
+
+In `LESSON3/proof_search.pl`:
+
+- `loves(vincent, mia).`
+- `loves(marsellus, mia).`
+- `jealous(A, B) :- loves(A, C), loves(B, C).`
+
+Run Lesson 3:
+
+```powershell
+swipl LESSON3/proof_search.pl
+```
+
+Try queries:
+
+```prolog
+loves(vincent, mia).
+jealous(vincent, marsellus).
+jealous(X, Y).
+```
+
+## Lesson 4: Recursion
+
+Lesson 4 introduces **recursive rules** and transitive relations.
+
+In `LESSON4/recursion.pl`:
+
+- `child/2` facts define parent-child links
+- `descend/2` is defined recursively
+- additional commented recursion examples are included (`isDigesting/2`, `add/3`)
+
+Run Lesson 4:
+
+```powershell
+swipl LESSON4/recursion.pl
+```
+
+Try queries:
+
+```prolog
+descend(anna, emily).
+descend(bridget, donna).
+descend(X, emily).
+```
+
+## Lesson 5: Lists
+
+Lesson 5 contains reference material for **lists in Prolog**.
+
+In `LESSON5/`, refer to:
+
+- `lists.png`
 
 
 
